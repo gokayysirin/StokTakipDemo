@@ -38,11 +38,14 @@
             // 
             // dgwProducts
             // 
+            this.dgwProducts.AllowUserToAddRows = false;
+            this.dgwProducts.AllowUserToDeleteRows = false;
             this.dgwProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwProducts.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgwProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwProducts.Location = new System.Drawing.Point(12, 12);
             this.dgwProducts.Name = "dgwProducts";
+            this.dgwProducts.ReadOnly = true;
             this.dgwProducts.RowHeadersWidth = 51;
             this.dgwProducts.RowTemplate.Height = 29;
             this.dgwProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

@@ -1,6 +1,6 @@
 ﻿namespace StokTakipDemo
 {
-    partial class Form1
+    partial class FrmAnaEkran
     {
         /// <summary>
         ///  Required designer variable.
@@ -64,6 +64,7 @@
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Ürün Düzenle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -92,7 +93,7 @@
             this.btnStockDown.Text = "Stok Azalt";
             this.btnStockDown.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FrmAnaEkran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -103,8 +104,8 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnListele);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FrmAnaEkran";
+            this.Text = "Stok Takip Sistemi";
             this.ResumeLayout(false);
 
         }

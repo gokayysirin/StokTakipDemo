@@ -1,8 +1,8 @@
 namespace StokTakipDemo
 {
-    public partial class Form1 : Form
+    public partial class FrmAnaEkran : Form
     {
-        public Form1()
+        public FrmAnaEkran()
         {
             InitializeComponent();
         }
@@ -17,6 +17,12 @@ namespace StokTakipDemo
         {
             FrmEkle frmEkle = new FrmEkle();
             frmEkle.Show();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            FrmDuzenle frmDuzenle = new FrmDuzenle();
+            frmDuzenle.Show();
         }
     }
 }

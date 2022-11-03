@@ -25,7 +25,7 @@ namespace StokTakipDemo
                 UrunAdi = tbxName.Text,
                 UrunSayisi = Convert.ToInt32(tbxStock.Text)
             });
-            MessageBox.Show("Eklendi!");
+            MessageBox.Show("Ürün Eklendi!");
         }
     }
 }

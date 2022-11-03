@@ -75,10 +75,13 @@
             // 
             // tbxProductCode
             // 
+            this.tbxProductCode.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tbxProductCode.Location = new System.Drawing.Point(186, 189);
             this.tbxProductCode.Name = "tbxProductCode";
+            this.tbxProductCode.ReadOnly = true;
             this.tbxProductCode.Size = new System.Drawing.Size(305, 27);
             this.tbxProductCode.TabIndex = 4;
+            this.tbxProductCode.Text = "Ürün kodu otomatik oluşturulmaktadır";
             // 
             // tbxStock
             // 
@@ -120,7 +123,7 @@
             this.ClientSize = new System.Drawing.Size(886, 601);
             this.Controls.Add(this.gbxAdd);
             this.Name = "FrmEkle";
-            this.Text = "Ürün Ekleme";
+            this.Text = "Stok Takip Sistemi";
             this.gbxAdd.ResumeLayout(false);
             this.gbxAdd.PerformLayout();
             this.ResumeLayout(false);
