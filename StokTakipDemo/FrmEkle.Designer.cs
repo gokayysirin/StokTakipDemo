@@ -31,9 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbxName = new System.Windows.Forms.TextBox();
+            this.tbxProductCode = new System.Windows.Forms.TextBox();
+            this.tbxStock = new System.Windows.Forms.TextBox();
             this.gbxAdd = new System.Windows.Forms.GroupBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.gbxAdd.SuspendLayout();
@@ -66,34 +66,34 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Ürün Miktarı";
             // 
-            // textBox1
+            // tbxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(186, 134);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(305, 27);
-            this.textBox1.TabIndex = 3;
+            this.tbxName.Location = new System.Drawing.Point(186, 134);
+            this.tbxName.Name = "tbxName";
+            this.tbxName.Size = new System.Drawing.Size(305, 27);
+            this.tbxName.TabIndex = 3;
             // 
-            // textBox2
+            // tbxProductCode
             // 
-            this.textBox2.Location = new System.Drawing.Point(186, 189);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(305, 27);
-            this.textBox2.TabIndex = 4;
+            this.tbxProductCode.Location = new System.Drawing.Point(186, 189);
+            this.tbxProductCode.Name = "tbxProductCode";
+            this.tbxProductCode.Size = new System.Drawing.Size(305, 27);
+            this.tbxProductCode.TabIndex = 4;
             // 
-            // textBox3
+            // tbxStock
             // 
-            this.textBox3.Location = new System.Drawing.Point(186, 237);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(305, 27);
-            this.textBox3.TabIndex = 5;
+            this.tbxStock.Location = new System.Drawing.Point(186, 237);
+            this.tbxStock.Name = "tbxStock";
+            this.tbxStock.Size = new System.Drawing.Size(305, 27);
+            this.tbxStock.TabIndex = 5;
             // 
             // gbxAdd
             // 
             this.gbxAdd.Controls.Add(this.btnAdd);
-            this.gbxAdd.Controls.Add(this.textBox1);
-            this.gbxAdd.Controls.Add(this.textBox3);
+            this.gbxAdd.Controls.Add(this.tbxName);
+            this.gbxAdd.Controls.Add(this.tbxStock);
             this.gbxAdd.Controls.Add(this.label1);
-            this.gbxAdd.Controls.Add(this.textBox2);
+            this.gbxAdd.Controls.Add(this.tbxProductCode);
             this.gbxAdd.Controls.Add(this.label2);
             this.gbxAdd.Controls.Add(this.label3);
             this.gbxAdd.Location = new System.Drawing.Point(106, 58);
@@ -111,6 +111,7 @@
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Ürün Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // FrmEkle
             // 
@@ -131,9 +132,9 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox tbxName;
+        private TextBox tbxProductCode;
+        private TextBox tbxStock;
         private GroupBox gbxAdd;
         private Button btnAdd;
     }

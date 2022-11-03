@@ -58,7 +58,7 @@
             this.gbxSearch.Size = new System.Drawing.Size(521, 93);
             this.gbxSearch.TabIndex = 1;
             this.gbxSearch.TabStop = false;
-            this.gbxSearch.Text = "Ürün Kodu ile Arama";
+            this.gbxSearch.Text = "Ürün Adı ile Arama";
             // 
             // tbxSearchbyName
             // 
@@ -73,9 +73,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(130, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 20);
+            this.label1.Size = new System.Drawing.Size(70, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ürün Kodu:";
+            this.label1.Text = "Ürün Adı:";
             // 
             // FrmListele
             // 

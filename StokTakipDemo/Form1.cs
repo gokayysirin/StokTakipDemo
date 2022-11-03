@@ -12,5 +12,11 @@ namespace StokTakipDemo
             FrmListele frmListele = new FrmListele();
             frmListele.Show();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            FrmEkle frmEkle = new FrmEkle();
+            frmEkle.Show();
+        }
     }
 }

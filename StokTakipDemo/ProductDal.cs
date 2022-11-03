@@ -15,14 +15,14 @@ namespace StokTakipDemo
         {
             using (StokTakipContext context = new StokTakipContext())
             {
-                return context.Products.ToList();
+                return context.Products1.ToList();
             }
         }
         public List<Product> GetbyName(string key)
         {
             using (StokTakipContext context = new StokTakipContext())
             {
-                return context.Products.Where(p => p.UrunAdi.Contains(key)).ToList();
+                return context.Products1.Where(p => p.UrunAdi.Contains(key)).ToList();
 
             }
         }
@@ -30,7 +30,7 @@ namespace StokTakipDemo
         {
             using (StokTakipContext context = new StokTakipContext())
             {
-                context.Products.Add(product);
+                context.Products1.Add(product);
                 context.SaveChanges();
 
             }

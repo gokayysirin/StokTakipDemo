@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace StokTakipDemo
 {
-    [Table("Products")] 
+    [Table("Products1")] 
     public class Product
     {
         [Key]
         public int UrunKodu { get; set; }
-        public string UrunAdi { get; set; }
-        public int UrunSayisi { get; set; }
+        public string ?UrunAdi { get; set; }
+        public int ?UrunSayisi { get; set; }
 
     }
 }

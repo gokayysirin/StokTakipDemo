@@ -16,5 +16,16 @@ namespace StokTakipDemo
         {
             InitializeComponent();
         }
+        ProductDal _productDal = new ProductDal();
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            _productDal.Add(new Product
+            {
+                
+                UrunAdi = tbxName.Text,
+                UrunSayisi = Convert.ToInt32(tbxStock.Text)
+            });
+            MessageBox.Show("Eklendi!");
+        }
     }
 }
