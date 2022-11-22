@@ -45,5 +45,15 @@ namespace StokTakipDemo
 
             }
         }
+        public void Delete(Product product)
+        {
+            using (StokTakipContext context = new StokTakipContext())
+            {
+                var entity = context.Entry(product);
+                entity.State = System.Data.Entity.EntityState.Deleted;
+                context.SaveChanges();
+
+            }
+        }
     }
 }

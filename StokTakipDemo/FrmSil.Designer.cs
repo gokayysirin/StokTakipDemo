@@ -1,6 +1,6 @@
 ﻿namespace StokTakipDemo
 {
-    partial class FrmListele
+    partial class FrmSil
     {
         /// <summary>
         /// Required designer variable.
@@ -32,6 +32,7 @@
             this.gbxSearch = new System.Windows.Forms.GroupBox();
             this.tbxSearchbyName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProducts)).BeginInit();
             this.gbxSearch.SuspendLayout();
             this.SuspendLayout();
@@ -50,16 +51,16 @@
             this.dgwProducts.RowTemplate.Height = 29;
             this.dgwProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgwProducts.Size = new System.Drawing.Size(787, 348);
-            this.dgwProducts.TabIndex = 0;
+            this.dgwProducts.TabIndex = 1;
             // 
             // gbxSearch
             // 
             this.gbxSearch.Controls.Add(this.tbxSearchbyName);
             this.gbxSearch.Controls.Add(this.label1);
-            this.gbxSearch.Location = new System.Drawing.Point(129, 366);
+            this.gbxSearch.Location = new System.Drawing.Point(135, 366);
             this.gbxSearch.Name = "gbxSearch";
             this.gbxSearch.Size = new System.Drawing.Size(521, 93);
-            this.gbxSearch.TabIndex = 1;
+            this.gbxSearch.TabIndex = 2;
             this.gbxSearch.TabStop = false;
             this.gbxSearch.Text = "Ürün Adı ile Arama";
             // 
@@ -69,7 +70,7 @@
             this.tbxSearchbyName.Name = "tbxSearchbyName";
             this.tbxSearchbyName.Size = new System.Drawing.Size(161, 27);
             this.tbxSearchbyName.TabIndex = 1;
-            this.tbxSearchbyName.TextChanged += new System.EventHandler(this.tbxSearchbyCode_TextChanged);
+            this.tbxSearchbyName.TextChanged += new System.EventHandler(this.tbxSearchbyName_TextChanged);
             // 
             // label1
             // 
@@ -80,16 +81,27 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ürün Adı:";
             // 
-            // FrmListele
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(265, 481);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(249, 32);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "Seçili Ürünü Sil";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // FrmSil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 471);
+            this.ClientSize = new System.Drawing.Size(813, 568);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.gbxSearch);
             this.Controls.Add(this.dgwProducts);
-            this.Name = "FrmListele";
+            this.Name = "FrmSil";
             this.Text = "Stok Takip Sistemi";
-            this.Load += new System.EventHandler(this.FrmListele_Load);
+            this.Load += new System.EventHandler(this.FrmSil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwProducts)).EndInit();
             this.gbxSearch.ResumeLayout(false);
             this.gbxSearch.PerformLayout();
@@ -103,5 +115,6 @@
         private GroupBox gbxSearch;
         private TextBox tbxSearchbyName;
         private Label label1;
+        private Button btnDelete;
     }
 }

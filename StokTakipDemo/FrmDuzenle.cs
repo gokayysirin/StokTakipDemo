@@ -24,13 +24,28 @@ namespace StokTakipDemo
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            _productDal.Update(new Product
+            try
             {
-                UrunAdi= tbxName.Text,
-                UrunKodu= Convert.ToInt32(tbxCode.Text),
-                UrunSayisi =Convert.ToInt32(tbxStock.Text)
-            });
-            dgwProducts.DataSource = _productDal.GetAll();
+                if (Convert.ToInt32(tbxStock.Text) >= 0) {
+                    _productDal.Update(new Product
+                    {
+                        UrunAdi = tbxName.Text,
+                        UrunKodu = Convert.ToInt32(tbxCode.Text),
+                        UrunSayisi = Convert.ToInt32(tbxStock.Text)
+                    });
+                    dgwProducts.DataSource = _productDal.GetAll();
+                }
+                else
+                {
+                    MessageBox.Show("Ürün Sayısı Sıfırdan Az Olamaz. Lütfen Ürün Sayısı Değerlerini Kontrol Edin", "Değer hatası!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ürün Adı ve Ürün Sayısı Boş Bırakılamaz. Ürün Sayısı Harf ve Özel Karakter İçeremez!", "Değer hatası!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void dgwProducts_CellClick(object sender, DataGridViewCellEventArgs e)

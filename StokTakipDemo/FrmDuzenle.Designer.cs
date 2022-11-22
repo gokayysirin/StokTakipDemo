@@ -108,6 +108,7 @@
             this.tbxCode.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.tbxCode.Location = new System.Drawing.Point(273, 70);
             this.tbxCode.Name = "tbxCode";
+            this.tbxCode.ReadOnly = true;
             this.tbxCode.Size = new System.Drawing.Size(271, 27);
             this.tbxCode.TabIndex = 1;
             // 

@@ -74,6 +74,7 @@
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Ürün Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnStockUp
             // 
@@ -83,6 +84,7 @@
             this.btnStockUp.TabIndex = 4;
             this.btnStockUp.Text = "Stok Arttır";
             this.btnStockUp.UseVisualStyleBackColor = true;
+            this.btnStockUp.Click += new System.EventHandler(this.btnStockUp_Click);
             // 
             // btnStockDown
             // 
@@ -92,6 +94,7 @@
             this.btnStockDown.TabIndex = 5;
             this.btnStockDown.Text = "Stok Azalt";
             this.btnStockDown.UseVisualStyleBackColor = true;
+            this.btnStockDown.Click += new System.EventHandler(this.btnStockDown_Click);
             // 
             // FrmAnaEkran
             // 

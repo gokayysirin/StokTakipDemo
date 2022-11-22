@@ -24,5 +24,23 @@ namespace StokTakipDemo
             FrmDuzenle frmDuzenle = new FrmDuzenle();
             frmDuzenle.Show();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            FrmSil frmSil = new FrmSil();
+            frmSil.Show();
+        }
+
+        private void btnStockUp_Click(object sender, EventArgs e)
+        {
+            StokGiris stokGiris = new StokGiris();
+            stokGiris.Show();
+        }
+
+        private void btnStockDown_Click(object sender, EventArgs e)
+        {
+            StokAzalt stokAzalt = new StokAzalt();
+            stokAzalt.Show();
+        }
     }
 }

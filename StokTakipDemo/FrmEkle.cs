@@ -19,13 +19,29 @@ namespace StokTakipDemo
         ProductDal _productDal = new ProductDal();
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            _productDal.Add(new Product
+            try
             {
-                
-                UrunAdi = tbxName.Text,
-                UrunSayisi = Convert.ToInt32(tbxStock.Text)
-            });
-            MessageBox.Show("Ürün Eklendi!");
+                if (Convert.ToInt32(tbxStock.Text) > 0)
+                {
+                    _productDal.Add(new Product
+                    {
+
+                        UrunAdi = tbxName.Text,
+                        UrunSayisi = Convert.ToInt32(tbxStock.Text)
+                    });
+                    MessageBox.Show("Ürün Eklendi!");
+                }
+                else
+                {
+                    MessageBox.Show("Ürün Sayısı Sıfırdan Az Olamaz. Lütfen Ürün Sayısı Değerlerini Kontrol Edin", "Değer hatası!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Ürün Adı ve Ürün Sayısı Boş Bırakılamaz. Ürün Sayısı Harf ve Özel Karakter İçeremez!", "Değer hatası!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }
