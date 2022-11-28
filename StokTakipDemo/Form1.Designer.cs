@@ -109,6 +109,7 @@
             this.Controls.Add(this.btnListele);
             this.Name = "FrmAnaEkran";
             this.Text = "Stok Takip Sistemi";
+            this.Load += new System.EventHandler(this.FrmAnaEkran_Load);
             this.ResumeLayout(false);
 
         }
